@@ -18,7 +18,29 @@
           },
           "hasShadow": false,
           "anchorPoint": "CENTER",
-          "x": 219,
+          "x": 220,
+          "y": 196,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barre.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 140,
+          "y": 204,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barreicone.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER",
+          "x": 211,
           "y": 206,
           "locked": false
         }
@@ -29,19 +51,41 @@
           "image": "allignement_barreicone.png",
           "use1Xscale": true,
           "anchorPoint": "CENTER",
-          "x": 208,
-          "y": 207,
+          "x": 238,
+          "y": 206,
           "locked": false
         }
       },
       {
         "type": "image",
         "data": {
-          "image": "allignement_barre.png",
-          "use1Xscale": false,
+          "image": "allignement_barreicone.png",
+          "use1Xscale": true,
           "anchorPoint": "CENTER",
-          "x": 138,
-          "y": 203,
+          "x": 264,
+          "y": 206,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barreicone.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER",
+          "x": 184,
+          "y": 206,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barreicone.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER",
+          "x": 160,
+          "y": 206,
           "locked": false
         }
       }

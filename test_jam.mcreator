@@ -124,9 +124,9 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/testjam/init/TestJamModKeyMappings.java",
+      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
       "src/main/java/net/mcreator/testjam/TestJamMod.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/resources/pack.mcmeta"
     ]
   },
