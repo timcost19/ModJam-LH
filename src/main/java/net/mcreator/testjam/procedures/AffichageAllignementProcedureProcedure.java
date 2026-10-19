@@ -21,7 +21,7 @@ public class AffichageAllignementProcedureProcedure {
 				Color = "\u00A7d";
 			}
 		} else {
-			Color = "\u00A7b";
+			Color = "\u00A79";
 		}
 		return Color + "" + new java.text.DecimalFormat("##.##").format(TestJamModVariables.MapVariables.get(world).Allignement);
 	}
