@@ -43,6 +43,66 @@
           "src/main/java/net/mcreator/testjam/client/screens/AffichageAllignementOverlay.java"
         ]
       }
+    },
+    {
+      "name": "TestAllignement",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testpositive_allignement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testjam/network/TestAllignementMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "Testnegativeallignement",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testnegativeallignement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testjam/network/TestnegativeallignementMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "TestPositiveAllignementProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_positive_allignement_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/TestPositiveAllignementProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TestNegativeAllignementProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_negative_allignement_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/TestNegativeAllignementProcedureProcedure.java"
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -58,11 +118,14 @@
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.test_jam.testsiturecoitcacbon": "Testsiturecoitcacbon"
+      "item.test_jam.testsiturecoitcacbon": "Testsiturecoitcacbon",
+      "key.test_jam.testpositive_allignement": "TestPositive Allignement",
+      "key.test_jam.testnegativeallignement": "TestNegative Allignement"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/testjam/init/TestJamModKeyMappings.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModItems.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
