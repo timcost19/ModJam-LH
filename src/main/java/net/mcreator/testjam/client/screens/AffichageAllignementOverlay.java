@@ -32,7 +32,7 @@ public class AffichageAllignementOverlay {
 		if (true) {
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 
-					AffichageAllignementProcedureProcedure.execute(world), w / 2 + -69, h / 2 + 85, -1, false);
+					AffichageAllignementProcedureProcedure.execute(world), w / 2 + -6, h / 2 + 86, -1, false);
 		}
 	}
 }
