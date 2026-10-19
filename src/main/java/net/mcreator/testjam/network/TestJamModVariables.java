@@ -77,6 +77,8 @@ public class TestJamModVariables {
 	public static class WorldVariables extends SavedData {
 		public static final String DATA_NAME = "test_jam_worldvars";
 		boolean _syncDirty = false;
+		public double MaxAllignement = 0;
+		public double MinAllignement = 0;
 
 		public static WorldVariables load(CompoundTag tag, HolderLookup.Provider lookupProvider) {
 			WorldVariables data = new WorldVariables();
@@ -85,10 +87,14 @@ public class TestJamModVariables {
 		}
 
 		public void read(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			MaxAllignement = nbt.getDouble("MaxAllignement");
+			MinAllignement = nbt.getDouble("MinAllignement");
 		}
 
 		@Override
 		public CompoundTag save(CompoundTag nbt, HolderLookup.Provider lookupProvider) {
+			nbt.putDouble("MaxAllignement", MaxAllignement);
+			nbt.putDouble("MinAllignement", MinAllignement);
 			return nbt;
 		}
 

@@ -18,8 +18,30 @@
           },
           "hasShadow": false,
           "anchorPoint": "CENTER",
-          "x": 207,
+          "x": 219,
           "y": 206,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barreicone.png",
+          "use1Xscale": true,
+          "anchorPoint": "CENTER",
+          "x": 208,
+          "y": 207,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "allignement_barre.png",
+          "use1Xscale": false,
+          "anchorPoint": "CENTER",
+          "x": 138,
+          "y": 203,
           "locked": false
         }
       }

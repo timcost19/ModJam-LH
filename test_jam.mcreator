@@ -111,6 +111,18 @@
       "type": "number",
       "scope": "map",
       "value": "0"
+    },
+    {
+      "name": "MaxAllignement",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
+    },
+    {
+      "name": "MinAllignement",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [],
