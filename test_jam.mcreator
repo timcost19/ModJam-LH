@@ -12,9 +12,47 @@
           "src/main/resources/assets/test_jam/models/item/testsiturecoitcacbon.json"
         ]
       }
+    },
+    {
+      "name": "AffichageAllignementProcedure",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "affichage_allignement_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/AffichageAllignementProcedureProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "AffichageAllignement",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "affichage_allignement",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testjam/client/screens/AffichageAllignementOverlay.java"
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "Allignement",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "tag_elements": {},
   "tab_element_order": {},
@@ -26,8 +64,9 @@
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/testjam/init/TestJamModItems.java",
-      "src/main/java/net/mcreator/testjam/TestJamMod.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
+      "src/main/java/net/mcreator/testjam/TestJamMod.java",
       "src/main/resources/pack.mcmeta"
     ]
   },

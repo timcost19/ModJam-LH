@@ -18,6 +18,7 @@ import net.minecraft.network.protocol.common.custom.CustomPacketPayload;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.testjam.network.TestJamModVariables;
 import net.mcreator.testjam.init.TestJamModItems;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
@@ -41,6 +42,7 @@ public class TestJamMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		TestJamModItems.REGISTRY.register(modEventBus);
+		TestJamModVariables.ATTACHMENT_TYPES.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
