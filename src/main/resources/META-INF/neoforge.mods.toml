@@ -31,6 +31,12 @@ authors="MCreator"
     ordering="AFTER"
     side="BOTH"
 
+[[dependencies.test_jam]]
+    modId="mcreator_link"
+    type="required"
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 
 
 

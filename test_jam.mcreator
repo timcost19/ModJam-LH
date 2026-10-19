@@ -8,8 +8,8 @@
       "registry_name": "testsiturecoitcacbon",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/testjam/item/TestsiturecoitcacbonItem.java",
-          "src/main/resources/assets/test_jam/models/item/testsiturecoitcacbon.json"
+          "src/main/resources/assets/test_jam/models/item/testsiturecoitcacbon.json",
+          "src/main/java/net/mcreator/testjam/item/TestsiturecoitcacbonItem.java"
         ]
       }
     },
@@ -85,8 +85,11 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "mcreator_link"
+    ],
     "currentGenerator": "neoforge-1.21.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.testjam"
   },
   "mcreatorVersion": 202600233518
