@@ -132,7 +132,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "OverlayBarreAllignement",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "test_jam",
