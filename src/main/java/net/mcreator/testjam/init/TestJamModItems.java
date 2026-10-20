@@ -8,6 +8,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 
 import net.minecraft.world.item.Item;
 
+import net.mcreator.testjam.item.TestsiturecoitcacbonItem;
 import net.mcreator.testjam.TestJamMod;
 
 public class TestJamModItems {
