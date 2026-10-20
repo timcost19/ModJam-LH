@@ -90,19 +90,6 @@
           "src/main/java/net/mcreator/testjam/procedures/TestNegativeAllignementProcedureProcedure.java"
         ]
       }
-    },
-    {
-      "name": "Testsiturecoitcacbon",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testsiturecoitcacbon",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test_jam/models/item/testsiturecoitcacbon.json",
-          "src/main/java/net/mcreator/testjam/item/TestsiturecoitcacbonItem.java"
-        ]
-      }
     }
   ],
   "variable_elements": [
@@ -131,18 +118,17 @@
   "language_map": {
     "en_us": {
       "key.test_jam.testpositive_allignement": "TestPositive Allignement",
-      "key.test_jam.testnegativeallignement": "TestNegative Allignement",
-      "item.test_jam.testsiturecoitcacbon": "Testsiturecoitcacbon"
+      "key.test_jam.testnegativeallignement": "TestNegative Allignement"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/testjam/init/TestJamModKeyMappings.java",
-      "src/main/java/net/mcreator/testjam/init/TestJamModItems.java",
-      "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
       "src/main/java/net/mcreator/testjam/TestJamMod.java",
-      "src/main/resources/pack.mcmeta"
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/resources/pack.mcmeta",
+      "src/main/java/net/mcreator/testjam/init/TestJamModModels.java"
     ]
   },
   "foldersRoot": {
