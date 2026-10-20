@@ -1,4 +1,6 @@
 {
   "key.test_jam.testpositive_allignement": "TestPositive Allignement",
-  "key.test_jam.testnegativeallignement": "TestNegative Allignement"
+  "key.test_jam.testnegativeallignement": "TestNegative Allignement",
+  "entity.test_jam.oscar": "Oscar",
+  "item.test_jam.oscar_spawn_egg": "Oscar Spawn Egg"
 }
