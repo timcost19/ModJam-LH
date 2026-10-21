@@ -103,6 +103,154 @@
           "src/main/java/net/mcreator/testjam/item/TestsiturecoitcacbonItem.java"
         ]
       }
+    },
+    {
+      "name": "VillageCorrompueSpawnBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "village_corrompue_spawn_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/test_jam/loot_table/blocks/village_corrompue_spawn_block.json",
+          "src/main/resources/data/test_jam/worldgen/configured_feature/village_corrompue_spawn_block.json",
+          "src/main/resources/assets/test_jam/blockstates/village_corrompue_spawn_block.json",
+          "src/main/resources/assets/test_jam/models/item/village_corrompue_spawn_block.json",
+          "src/main/java/net/mcreator/testjam/block/VillageCorrompueSpawnBlockBlock.java",
+          "src/main/resources/data/test_jam/neoforge/biome_modifier/village_corrompue_spawn_block_biome_modifier.json",
+          "src/main/java/net/mcreator/testjam/block/entity/VillageCorrompueSpawnBlockBlockEntity.java",
+          "src/main/resources/data/test_jam/worldgen/placed_feature/village_corrompue_spawn_block.json",
+          "src/main/resources/assets/test_jam/models/block/village_corrompue_spawn_block.json"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "DemonCorrupteVillage",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_corrupte_village",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testjam/client/renderer/DemonCorrupteVillageRenderer.java",
+          "src/main/resources/assets/test_jam/models/item/demon_corrupte_village_spawn_egg.json",
+          "src/main/java/net/mcreator/testjam/entity/DemonCorrupteVillageEntity.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "DemonCorrupteVillageChaqueMiseAJourDeTickDeLentite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "demon_corrupte_village_chaque_mise_a_jour_de_tick_de_lentite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/DemonCorrupteVillageChaqueMiseAJourDeTickDeLentiteProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorruptedVillage",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "corrupted_village",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/CorruptedVillageProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorneDeProfaneEntityChaqueMiseAJourDeTickDeLentite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corne_de_profane_entity_chaque_mise_a_jour_de_tick_de_lentite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/CorneDeProfaneEntityChaqueMiseAJourDeTickDeLentiteProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorneDeProfaneEntity",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corne_de_profane_entity",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test_jam/models/item/corne_de_profane_entity_spawn_egg.json",
+          "src/main/java/net/mcreator/testjam/entity/CorneDeProfaneEntityEntity.java",
+          "src/main/java/net/mcreator/testjam/client/renderer/CorneDeProfaneEntityRenderer.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
     }
   ],
   "variable_elements": [
@@ -132,15 +280,26 @@
     "en_us": {
       "key.test_jam.testpositive_allignement": "TestPositive Allignement",
       "key.test_jam.testnegativeallignement": "TestNegative Allignement",
-      "item.test_jam.testsiturecoitcacbon": "Testsiturecoitcacbon"
+      "item.test_jam.testsiturecoitcacbon": "Testsiturecoitcacbon",
+      "block.test_jam.village_corrompue_spawn_block": "Village Corrompue Spawn Block",
+      "entity.test_jam.demon_corrupte_village": "Demon Corrupte Village",
+      "item.test_jam.demon_corrupte_village_spawn_egg": "Demon Corrupte Village Spawn Egg",
+      "entity.test_jam.corne_de_profane_entity": "Corne De Profane Entity",
+      "item.test_jam.corne_de_profane_entity_spawn_egg": "Corne De Profane Entity Spawn Egg"
     }
   },
   "metadata": {
     "files": [
       "src/main/java/net/mcreator/testjam/init/TestJamModKeyMappings.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModBlocks.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModBlockEntities.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModItems.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModEntityRenderers.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModEntities.java",
       "src/main/resources/META-INF/neoforge.mods.toml",
       "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModModels.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModTabs.java",
       "src/main/java/net/mcreator/testjam/TestJamMod.java",
       "src/main/resources/pack.mcmeta"
     ]
@@ -150,6 +309,10 @@
     "children": [
       {
         "name": "OverlayBarreAllignement",
+        "children": []
+      },
+      {
+        "name": "Village_corrompue",
         "children": []
       }
     ]

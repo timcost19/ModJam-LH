@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": {
+    "type": "neoforge:any"
+  },
+  "features": "test_jam:village_corrompue_spawn_block",
+  "step": "underground_ores"
+}

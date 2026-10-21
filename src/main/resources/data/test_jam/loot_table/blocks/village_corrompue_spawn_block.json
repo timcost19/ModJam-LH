@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "test_jam:blocks/village_corrompue_spawn_block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "test_jam:village_corrompue_spawn_block"
+        }
+      ]
+    }
+  ]
+}
