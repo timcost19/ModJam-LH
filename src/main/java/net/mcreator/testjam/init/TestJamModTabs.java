@@ -23,6 +23,7 @@ public class TestJamModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
 			tabData.accept(TestJamModItems.DEMON_CORRUPTE_VILLAGE_SPAWN_EGG.get());
 			tabData.accept(TestJamModItems.CORNE_DE_PROFANE_ENTITY_SPAWN_EGG.get());
+			tabData.accept(TestJamModItems.OSCAR_SPAWN_EGG.get());
 		}
 	}
 }

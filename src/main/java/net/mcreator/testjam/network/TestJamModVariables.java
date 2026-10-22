@@ -25,12 +25,15 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.client.model.EntityModel;
 
 import net.mcreator.testjam.TestJamMod;
 
 @EventBusSubscriber
 public class TestJamModVariables {
 	public static final DeferredRegister<AttachmentType<?>> ATTACHMENT_TYPES = DeferredRegister.create(NeoForgeRegistries.Keys.ATTACHMENT_TYPES, TestJamMod.MODID);
+	public static EntityModel CorneDeProfaneModel = null;
+	public static ResourceLocation TextureCorneDeProfane = null;
 
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
@@ -40,8 +43,8 @@ public class TestJamModVariables {
 	@SubscribeEvent
 	public static void onPlayerLoggedIn(PlayerEvent.PlayerLoggedInEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData mapdata = MapVariables.get(player.level());
-			SavedData worlddata = WorldVariables.get(player.level());
+			SavedData mapdata = MapVariables.get(event.getEntity().level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
 			if (mapdata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(0, mapdata));
 			if (worlddata != null)
@@ -52,7 +55,7 @@ public class TestJamModVariables {
 	@SubscribeEvent
 	public static void onPlayerChangedDimension(PlayerEvent.PlayerChangedDimensionEvent event) {
 		if (event.getEntity() instanceof ServerPlayer player) {
-			SavedData worlddata = WorldVariables.get(player.level());
+			SavedData worlddata = WorldVariables.get(event.getEntity().level());
 			if (worlddata != null)
 				PacketDistributor.sendToPlayer(player, new SavedDataSyncMessage(1, worlddata));
 		}

@@ -6,5 +6,8 @@
   "entity.test_jam.demon_corrupte_village": "Demon Corrupte Village",
   "item.test_jam.demon_corrupte_village_spawn_egg": "Demon Corrupte Village Spawn Egg",
   "entity.test_jam.corne_de_profane_entity": "Corne De Profane Entity",
-  "item.test_jam.corne_de_profane_entity_spawn_egg": "Corne De Profane Entity Spawn Egg"
+  "item.test_jam.corne_de_profane_entity_spawn_egg": "Corne De Profane Entity Spawn Egg",
+  "entity.test_jam.oscar": "Oscar",
+  "item.test_jam.oscar_spawn_egg": "Oscar Spawn Egg",
+  "effect.test_jam.corruption_effect": "Corruption Effect"
 }

@@ -15,6 +15,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.core.registries.Registries;
 
+import net.mcreator.testjam.entity.OscarEntity;
 import net.mcreator.testjam.entity.DemonCorrupteVillageEntity;
 import net.mcreator.testjam.entity.CorneDeProfaneEntityEntity;
 import net.mcreator.testjam.TestJamMod;
@@ -30,6 +31,10 @@ public class TestJamModEntities {
 			EntityType.Builder.<CorneDeProfaneEntityEntity>of(CorneDeProfaneEntityEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
 
 					.sized(0.6f, 1.8f));
+	public static final DeferredHolder<EntityType<?>, EntityType<OscarEntity>> OSCAR = register("oscar",
+			EntityType.Builder.<OscarEntity>of(OscarEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3)
+
+					.sized(0.6f, 1.8f));
 
 	// Start of user code block custom entities
 	// End of user code block custom entities
@@ -41,11 +46,13 @@ public class TestJamModEntities {
 	public static void init(RegisterSpawnPlacementsEvent event) {
 		DemonCorrupteVillageEntity.init(event);
 		CorneDeProfaneEntityEntity.init(event);
+		OscarEntity.init(event);
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(DEMON_CORRUPTE_VILLAGE.get(), DemonCorrupteVillageEntity.createAttributes().build());
 		event.put(CORNE_DE_PROFANE_ENTITY.get(), CorneDeProfaneEntityEntity.createAttributes().build());
+		event.put(OSCAR.get(), OscarEntity.createAttributes().build());
 	}
 }

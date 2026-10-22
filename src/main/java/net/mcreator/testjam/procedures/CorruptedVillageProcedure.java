@@ -35,7 +35,7 @@ public class CorruptedVillageProcedure {
     private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z) {
         if (world instanceof ServerLevel _level && _level.isVillage(BlockPos.containing(x, y, z))) {
             // 1 chance sur 20 (5%) lors de l'apparition d'un villageois dans un village
-            if (_level.getRandom().nextInt(20) == 0) {
+            if (_level.getRandom().nextInt(5) == 0) {
                 double spawnX = x + Mth.nextDouble(RandomSource.create(), -10, 10);
                 double spawnZ = z + Mth.nextDouble(RandomSource.create(), -10, 10);
 

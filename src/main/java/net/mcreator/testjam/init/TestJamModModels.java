@@ -9,13 +9,13 @@ import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
 import net.mcreator.testjam.client.model.Modeloscar_3D_model;
-import net.mcreator.testjam.client.model.ModelCustomModel;
+import net.mcreator.testjam.client.model.ModelCorneDeProfané;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class TestJamModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
 		event.registerLayerDefinition(Modeloscar_3D_model.LAYER_LOCATION, Modeloscar_3D_model::createBodyLayer);
+		event.registerLayerDefinition(ModelCorneDeProfané.LAYER_LOCATION, ModelCorneDeProfané::createBodyLayer);
 	}
 }

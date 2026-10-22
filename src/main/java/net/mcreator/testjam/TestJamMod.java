@@ -19,11 +19,7 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.testjam.network.TestJamModVariables;
-import net.mcreator.testjam.init.TestJamModTabs;
-import net.mcreator.testjam.init.TestJamModItems;
-import net.mcreator.testjam.init.TestJamModEntities;
-import net.mcreator.testjam.init.TestJamModBlocks;
-import net.mcreator.testjam.init.TestJamModBlockEntities;
+import net.mcreator.testjam.init.*;
 
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.Queue;
@@ -51,6 +47,7 @@ public class TestJamMod {
 		TestJamModEntities.REGISTRY.register(modEventBus);
 		TestJamModTabs.REGISTRY.register(modEventBus);
 		TestJamModVariables.ATTACHMENT_TYPES.register(modEventBus);
+		TestJamModMobEffects.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

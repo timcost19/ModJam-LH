@@ -48,17 +48,17 @@ public class AffichageAllignementOverlay {
 		RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		if (true) {
-			event.getGuiGraphics().blit(IMAGE_0, w / 2 + -73, h / 2 + 84, 0, 0, 150, 16, 150, 16);
+			event.getGuiGraphics().blit(IMAGE_0, w / 2 + -74, h / 2 + 88, 0, 0, 150, 16, 150, 16);
 
-			event.getGuiGraphics().blit(IMAGE_1, w / 2 + -2, h / 2 + 86, 0, 0, 8, 8, 8, 8);
+			event.getGuiGraphics().blit(IMAGE_1, w / 2 + -4, h / 2 + 91, 0, 0, 8, 8, 8, 8);
 
-			event.getGuiGraphics().blit(IMAGE_2, w / 2 + 25, h / 2 + 86, 0, 0, 8, 8, 8, 8);
+			event.getGuiGraphics().blit(IMAGE_2, w / 2 + 26, h / 2 + 91, 0, 0, 8, 8, 8, 8);
 
-			event.getGuiGraphics().blit(IMAGE_3, w / 2 + 51, h / 2 + 86, 0, 0, 8, 8, 8, 8);
+			event.getGuiGraphics().blit(IMAGE_3, w / 2 + 48, h / 2 + 91, 0, 0, 8, 8, 8, 8);
 
-			event.getGuiGraphics().blit(IMAGE_4, w / 2 + -29, h / 2 + 86, 0, 0, 8, 8, 8, 8);
+			event.getGuiGraphics().blit(IMAGE_4, w / 2 + -31, h / 2 + 91, 0, 0, 8, 8, 8, 8);
 
-			event.getGuiGraphics().blit(IMAGE_5, w / 2 + -53, h / 2 + 86, 0, 0, 8, 8, 8, 8);
+			event.getGuiGraphics().blit(IMAGE_5, w / 2 + -52, h / 2 + 91, 0, 0, 8, 8, 8, 8);
 
 			event.getGuiGraphics().drawString(Minecraft.getInstance().font,
 

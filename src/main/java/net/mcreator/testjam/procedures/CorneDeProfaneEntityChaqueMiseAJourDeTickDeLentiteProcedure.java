@@ -4,6 +4,8 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
 import java.util.Comparator;
 
@@ -12,16 +14,13 @@ public class CorneDeProfaneEntityChaqueMiseAJourDeTickDeLentiteProcedure {
 		if (entity == null)
 			return;
 		double Compte_Ticks = 0;
-		if (Compte_Ticks == 20 && entity.isPassenger()) {
-			Compte_Ticks = 0;
+		if (Mth.nextDouble(RandomSource.create(), 1, 5) == 3) {
 			{
 				final Vec3 _center = new Vec3(x, y, z);
-				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(1 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
+				for (Entity entityiterator : world.getEntitiesOfClass(Entity.class, new AABB(_center, _center).inflate(4 / 2d), e -> true).stream().sorted(Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_center))).toList()) {
 					entity.startRiding(entityiterator);
 				}
 			}
-		} else {
-			Compte_Ticks = Compte_Ticks + 1;
 		}
 	}
 }

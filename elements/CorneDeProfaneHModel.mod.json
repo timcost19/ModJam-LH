@@ -1,0 +1,13 @@
+{
+  "_fv": 89,
+  "_type": "humanoidmodel",
+  "definition": {
+    "modelName": "ModelCorneDeProfané",
+    "helmetModelPart": "Empty",
+    "bodyModelPart": "head",
+    "armsModelPartL": "head",
+    "armsModelPartR": "head",
+    "leggingsModelPartL": "head",
+    "leggingsModelPartR": "head"
+  }
+}

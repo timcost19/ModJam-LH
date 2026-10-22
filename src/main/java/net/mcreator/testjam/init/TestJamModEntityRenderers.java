@@ -8,6 +8,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.api.distmarker.Dist;
 
+import net.mcreator.testjam.client.renderer.OscarRenderer;
 import net.mcreator.testjam.client.renderer.DemonCorrupteVillageRenderer;
 import net.mcreator.testjam.client.renderer.CorneDeProfaneEntityRenderer;
 
@@ -17,5 +18,6 @@ public class TestJamModEntityRenderers {
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(TestJamModEntities.DEMON_CORRUPTE_VILLAGE.get(), DemonCorrupteVillageRenderer::new);
 		event.registerEntityRenderer(TestJamModEntities.CORNE_DE_PROFANE_ENTITY.get(), CorneDeProfaneEntityRenderer::new);
+		event.registerEntityRenderer(TestJamModEntities.OSCAR.get(), OscarRenderer::new);
 	}
 }

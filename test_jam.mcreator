@@ -92,19 +92,6 @@
       }
     },
     {
-      "name": "Testsiturecoitcacbon",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "testsiturecoitcacbon",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/test_jam/models/item/testsiturecoitcacbon.json",
-          "src/main/java/net/mcreator/testjam/item/TestsiturecoitcacbonItem.java"
-        ]
-      }
-    },
-    {
       "name": "VillageCorrompueSpawnBlock",
       "type": "block",
       "compiles": true,
@@ -251,6 +238,223 @@
         ]
       },
       "path": "~/Village_corrompue"
+    },
+    {
+      "name": "Oscar",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "oscar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/test_jam/models/item/oscar_spawn_egg.json",
+          "src/main/java/net/mcreator/testjam/entity/OscarEntity.java",
+          "src/main/resources/data/test_jam/neoforge/biome_modifier/oscar_biome_modifier.json",
+          "src/main/java/net/mcreator/testjam/client/renderer/OscarRenderer.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "OscarChaqueMiseAJourDeTickDeLentite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "oscar_chaque_mise_a_jour_de_tick_de_lentite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/OscarChaqueMiseAJourDeTickDeLentiteProcedure.java"
+        ]
+      },
+      "path": "~/Mobs"
+    },
+    {
+      "name": "CorneDeProfaneEntityQuandLeJoueurFaitUnClicDroitSurLentite",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corne_de_profane_entity_quand_le_joueur_fait_un_clic_droit_sur_lentite",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/CorneDeProfaneEntityQuandLeJoueurFaitUnClicDroitSurLentiteProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorneDeProfaneHModel",
+      "type": "humanoidmodel",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corne_de_profane_h_model",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "SetVariables",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_variables",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/SetVariablesProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "SetPlayersModel",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_players_model",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "playerRenderEvent",
+            "type": "playerrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/SetPlayersModelProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "SetEntityCorrupted",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_entity_corrupted",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "entityRenderEvent",
+            "type": "entityrendering"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/SetEntityCorruptedProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "Testcorruption",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testcorruption",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/TestcorruptionProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorruptionEffectQuandLeffetCommenceEstApplique",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruption_effect_quand_leffet_commence_est_applique",
+      "metadata": {
+        "dependencies": [],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/CorruptionEffectQuandLeffetCommenceEstAppliqueProcedure.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "CorruptionEffect",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "corruption_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/testjam/potion/CorruptionEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Village_corrompue"
+    },
+    {
+      "name": "Test_OscarTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_oscar_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/testjam/procedures/Test_OscarTickProcedure.java"
+        ]
+      },
+      "path": "~/Mobs"
     }
   ],
   "variable_elements": [
@@ -271,6 +475,18 @@
       "type": "number",
       "scope": "world",
       "value": "0"
+    },
+    {
+      "name": "CorneDeProfaneModel",
+      "type": "model",
+      "scope": "global",
+      "value": "null"
+    },
+    {
+      "name": "TextureCorneDeProfane",
+      "type": "texturelocation",
+      "scope": "global",
+      "value": "null"
     }
   ],
   "sound_elements": [],
@@ -285,11 +501,16 @@
       "entity.test_jam.demon_corrupte_village": "Demon Corrupte Village",
       "item.test_jam.demon_corrupte_village_spawn_egg": "Demon Corrupte Village Spawn Egg",
       "entity.test_jam.corne_de_profane_entity": "Corne De Profane Entity",
-      "item.test_jam.corne_de_profane_entity_spawn_egg": "Corne De Profane Entity Spawn Egg"
+      "item.test_jam.corne_de_profane_entity_spawn_egg": "Corne De Profane Entity Spawn Egg",
+      "entity.test_jam.oscar": "Oscar",
+      "item.test_jam.oscar_spawn_egg": "Oscar Spawn Egg",
+      "effect.test_jam.corruption_effect": "Corruption Effect"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/testjam/init/TestJamModMobEffects.java",
+      "src/main/java/net/mcreator/testjam/init/TestJamModHumanoidModels.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModKeyMappings.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModBlocks.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModBlockEntities.java",
@@ -300,6 +521,7 @@
       "src/main/java/net/mcreator/testjam/network/TestJamModVariables.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModModels.java",
       "src/main/java/net/mcreator/testjam/init/TestJamModTabs.java",
+      "src/main/resources/META-INF/accesstransformer.cfg",
       "src/main/java/net/mcreator/testjam/TestJamMod.java",
       "src/main/resources/pack.mcmeta"
     ]
@@ -313,6 +535,10 @@
       },
       {
         "name": "Village_corrompue",
+        "children": []
+      },
+      {
+        "name": "Mobs",
         "children": []
       }
     ]

@@ -5,13 +5,13 @@ import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 
 import net.mcreator.testjam.entity.CorneDeProfaneEntityEntity;
-import net.mcreator.testjam.client.model.ModelCustomModel;
+import net.mcreator.testjam.client.model.ModelCorneDeProfané;
 
-public class CorneDeProfaneEntityRenderer extends MobRenderer<CorneDeProfaneEntityEntity, ModelCustomModel<CorneDeProfaneEntityEntity>> {
+public class CorneDeProfaneEntityRenderer extends MobRenderer<CorneDeProfaneEntityEntity, ModelCorneDeProfané<CorneDeProfaneEntityEntity>> {
 	private final ResourceLocation entityTexture = ResourceLocation.parse("test_jam:textures/entities/cornedeprofane_texture.png");
 
 	public CorneDeProfaneEntityRenderer(EntityRendererProvider.Context context) {
-		super(context, new ModelCustomModel<CorneDeProfaneEntityEntity>(context.bakeLayer(ModelCustomModel.LAYER_LOCATION)), 0.5f);
+		super(context, new ModelCorneDeProfané<CorneDeProfaneEntityEntity>(context.bakeLayer(ModelCorneDeProfané.LAYER_LOCATION)), 0f);
 	}
 
 	@Override
